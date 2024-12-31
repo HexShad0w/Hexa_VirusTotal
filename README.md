@@ -1,43 +1,60 @@
 # Hexa_VirusTotal
 
-VirusTotal_Hexa is a lightweight Python tool designed to analyze file hashes and compare them against VirusTotal's malware database using their API. It provides a fast and easy way to identify potentially malicious files.
+Hexa_VirusTotal is a lightweight Python tool for analyzing file hashes and querying VirusTotal's malware database via its API. It's a fast and straightforward way to identify potentially malicious files.
 
 # Features
 
-• Hash Calculation: Computes MD5, SHA-1, and SHA-256 hashes for any file.
+Hash Calculation: Computes MD5, SHA-1, and SHA-256 hashes for any file.
 
-• VirusTotal Integration: Queries VirusTotal to check if the file hash is associated with malware.
+VirusTotal Integration: Checks VirusTotal for malware associations with the file hash.
 
-• Detailed Results: Displays detection stats and quick insights on suspicious files.
+Detailed Results: Displays detection statistics and provides quick insights into suspicious files.
 
+---
 
 # Installation
 
-## 1. Clone the repository
+## Step 1: Clone the Repository
+
+Clone the repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/VirusTotal_Hexa.git
-```
-```bash
+git clone https://github.com/yourusername/VirusTotal_Hexa.git  
 cd VirusTotal_Hexa
 ```
-## 2. Install required dependencies
+## Step 2: Install Dependencies
 
+Install the required Python dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-## 3. Get your VirusTotal API key
 
-Sign up at VirusTotal to obtain a free API key.
+## Step 3: Get Your VirusTotal API Key
+
+Sign up at VirusTotal to obtain a free API key and configure it for the tool.
+
+
+---
 
 # Usage
 
-Run the tool:
+Run the tool to analyze file hashes:
 
 ```bash
 python VirusTotal_Hexa.py
 ```
-# How to contribute :
+Follow the on-screen instructions to input file paths or hashes for analysis.
 
-You can contribute to this project ! Made a fork and I ll take a look
 
-You can also dm me on X : x.com/hexsh1dow
+---
+
+# Contribution
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Make your changes.
+3. Submit a pull request.
+
+
+
+Feel free to reach out to me on X (formerly Twitter): <a href="x.com/hexsh1dow">Click Here</a>
