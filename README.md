@@ -57,4 +57,4 @@ Contributions are welcome! To contribute:
 
 
 
-Feel free to reach out to me on X (formerly Twitter): <a href="x.com/hexsh1dow">Click Here</a>
+Feel free to reach out to me on X (formerly Twitter): <a href="https://x.com/hexsh1dow">Click Here</a>
