@@ -28,12 +28,12 @@ def print_banner():
                         style="bold cyan", title="Welcome", title_align="center"))
 def Credit():
     clear()
-    print("""
+    console.print("""[bold blue]
 [+] Author : hexsh1dow
 [+] Tool :
 
 """)
-    input("Press Enter To Continue")
+    console.input("[bold yellow]Press Enter To Continue")
 
 def load_api_key():
     if os.path.exists(CONFIG_FILE):
