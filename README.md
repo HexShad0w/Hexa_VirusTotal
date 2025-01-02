@@ -18,7 +18,7 @@ Detailed Results: Displays detection statistics and provides quick insights into
 
 Clone the repository to your local machine:
 ```bash
-git clone https://github.com/yourusername/VirusTotal_Hexa.git  
+git clone https://github.com/HexShad0w/Hexa_VirusTotal.git
 cd VirusTotal_Hexa
 ```
 ## Step 2: Install Dependencies
