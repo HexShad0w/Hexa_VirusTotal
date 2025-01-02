@@ -40,7 +40,7 @@ Sign up at VirusTotal to obtain a free API key and configure it for the tool.
 Run the tool to analyze file hashes:
 
 ```bash
-python VirusTotal_Hexa.py
+python hexa_vt.py
 ```
 Follow the on-screen instructions to input file paths or hashes for analysis.
 
