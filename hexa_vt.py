@@ -14,20 +14,27 @@ console = Console()
 def clear():
     os.system("clear" if os.name == "posix" else "cls")
 
-def print_banner():                                                                                 banner_text = Text("""
+def print_banner():
+    banner_text = Text("""
 ██╗  ██╗███████╗██╗  ██╗ █████╗     ██╗  ██╗    ██╗   ██╗████████╗
 ██║  ██║██╔════╝╚██╗██╔╝██╔══██╗    ╚██╗██╔╝    ██║   ██║╚══██╔══╝
-███████║█████╗   ╚███╔╝ ███████║     ╚███╔╝     ██║   ██║   ██║                                 ██╔══██║██╔══╝   ██╔██╗ ██╔══██║     ██╔██╗     ╚██╗ ██╔╝   ██║
-██║  ██║███████╗██╔╝ ██╗██║  ██║    ██╔╝ ██╗     ╚████╔╝    ██║                                 ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═╝      ╚═══╝     ╚═╝
-""", style="bold cyan")                                                                             console.print(banner_text)
+███████║█████╗   ╚███╔╝ ███████║     ╚███╔╝     ██║   ██║   ██║
+██╔══██║██╔══╝   ██╔██╗ ██╔══██║     ██╔██╗     ╚██╗ ██╔╝   ██║
+██║  ██║███████╗██╔╝ ██╗██║  ██║    ██╔╝ ██╗     ╚████╔╝    ██║
+╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═╝      ╚═══╝     ╚═╝
+""", style="bold cyan")
+    console.print(banner_text)
     console.print(Panel("[bold green]Static Malware Analysis Tool[/bold green]\n[italic yellow]Made by hexsh1dow[/italic yellow]",
-                        style="bold cyan", title="Welcome", title_align="center"))              def credit():
+                        style="bold cyan", title="Welcome", title_align="center"))
+def credit():
     clear()
     console.print("[bold green]╔════════════════════════════════════════════════════════╗")
-    console.print("""[bold cyan]                                                                [+] Tool: Hexa_VirusTotal
+    console.print("""[bold cyan]
+[+] Tool: Hexa_VirusTotal
 [+] Author: @hexsh1dow
 [+] Features: Static Analysis tool
-    using VirusTotal API to detect potential Malware                                            [+] Version: 1.0
+    using VirusTotal API to detect potential Malware
+[+] Version: 1.0
     """)
     console.print("[bold green]╚════════════════════════════════════════════════════════╝")
     console.input("[bold blue][*] Press Enter to return to the main menu...")
