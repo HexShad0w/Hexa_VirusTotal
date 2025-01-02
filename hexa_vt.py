@@ -14,26 +14,23 @@ console = Console()
 def clear():
     os.system("clear" if os.name == "posix" else "cls")
 
-def print_banner():
-    banner_text = Text("""
+def print_banner():                                                                                 banner_text = Text("""
 ██╗  ██╗███████╗██╗  ██╗ █████╗     ██╗  ██╗    ██╗   ██╗████████╗
 ██║  ██║██╔════╝╚██╗██╔╝██╔══██╗    ╚██╗██╔╝    ██║   ██║╚══██╔══╝
-███████║█████╗   ╚███╔╝ ███████║     ╚███╔╝     ██║   ██║   ██║
-██╔══██║██╔══╝   ██╔██╗ ██╔══██║     ██╔██╗     ╚██╗ ██╔╝   ██║
-██║  ██║███████╗██╔╝ ██╗██║  ██║    ██╔╝ ██╗     ╚████╔╝    ██║
-╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═╝      ╚═══╝     ╚═╝
-""", style="bold cyan")
-    console.print(banner_text)
-    console.print(Panel("[bold green]Static Analysis Tool[/bold green]\n[italic yellow]Made by hexsh1dow[/italic yellow]",
-                        style="bold cyan", title="Welcome", title_align="center"))
-def Credit():
+███████║█████╗   ╚███╔╝ ███████║     ╚███╔╝     ██║   ██║   ██║                                 ██╔══██║██╔══╝   ██╔██╗ ██╔══██║     ██╔██╗     ╚██╗ ██╔╝   ██║
+██║  ██║███████╗██╔╝ ██╗██║  ██║    ██╔╝ ██╗     ╚████╔╝    ██║                                 ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═╝      ╚═══╝     ╚═╝
+""", style="bold cyan")                                                                             console.print(banner_text)
+    console.print(Panel("[bold green]Static Malware Analysis Tool[/bold green]\n[italic yellow]Made by hexsh1dow[/italic yellow]",
+                        style="bold cyan", title="Welcome", title_align="center"))              def credit():
     clear()
-    console.print("""[bold blue]
-[+] Author : hexsh1dow
-[+] Tool :
-
-""")
-    console.input("[bold yellow]Press Enter To Continue")
+    console.print("[bold green]╔════════════════════════════════════════════════════════╗")
+    console.print("""[bold cyan]                                                                [+] Tool: Hexa_VirusTotal
+[+] Author: @hexsh1dow
+[+] Features: Static Analysis tool
+    using VirusTotal API to detect potential Malware                                            [+] Version: 1.0
+    """)
+    console.print("[bold green]╚════════════════════════════════════════════════════════╝")
+    console.input("[bold blue][*] Press Enter to return to the main menu...")
 
 def load_api_key():
     if os.path.exists(CONFIG_FILE):
@@ -109,7 +106,7 @@ def main_menu():
         elif choice == "2":
             set_api_key()
         elif choice == "3":
-            Credit()
+            credit()
         elif choice == "0":
             console.print("[bold green]Thank you for using the tool! Goodbye![/bold green]")
             break
